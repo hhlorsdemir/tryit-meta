@@ -1,0 +1,46 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    env_file: ./app.env
+    environment:
+      # Olay günlüğü, ürün kartları ve medya dosyaları (avatar ve kombin
+      # görselleri, 30 gün). Sunucuda deploy/data altında duruyor ki konteyner
+      # yenilendiğinde kaybolmasın ve host tarafından okunabilsin.
+      TRYIT_DATA_DIR: /data
+      # Görsel adreslerinin kökü. Sunucudaki deploy/.env içinden değişiyor;
+      # yeniden derleme gerekmiyor, "up -d app" yetiyor.
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-https://tryit.lafdev.com}
+      # Ürün kartı (Muse Spark tarifi, giydirme istemine girer): 1 açık,
+      # META_API_KEY yoksa zaten kapalı. Kartlar /data/product-cards.json
+      # içinde. Bekleme resolve'un kartı en çok ne kadar beklediği (ms).
+      # İkisi de deploy/.env içinden değişiyor; "up -d app" yetiyor.
+      PRODUCT_CARD: ${PRODUCT_CARD:-1}
+      PRODUCT_CARD_WAIT_MS: ${PRODUCT_CARD_WAIT_MS:-8000}
+      # Web portalı (kök sayfa, anahtarsız çerezli kanal). Sır TRYIT_WEB_SECRET
+      # app.env içinde; bayrak deploy/.env içinden değişiyor.
+      TRYIT_WEB_ENABLED: ${TRYIT_WEB_ENABLED:-0}
+    volumes:
+      - ./data:/data
+    expose:
+      - "3000"
+    # Chromium paylaşımlı belleği kullanıyor; varsayılan 64 MB yetmiyor.
+    shm_size: "1gb"
+    # Tarayıcı süreçleri kapanırken zombi bırakmasın diye gerçek bir PID 1.
+    init: true
+    # 80 ve 443'ü sunucunun ortak Caddy'si (/opt/edge) tutuyor; istekler
+    # `edge` ağı üzerinden `tryit-app` adıyla geliyor. Site ayarı
+    # deploy/tryit.caddy. Servis adı "app" kaldı (konteyner adları ve
+    # komutlar değişmesin diye); edge ağında başka "app" servisi olmamalı.
+    networks:
+      default:
+      edge:
+        aliases:
+          - tryit-app
+
+networks:
+  edge:
+    external: true
+    name: edge

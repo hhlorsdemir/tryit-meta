@@ -1,0 +1,101 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+
+    ]
+  },
+  "identifier" : "7E1A2B3C",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6814813955",
+    "_developerTeamID" : "5X592SK4E8",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 780000000,
+    "_locale" : "tr",
+    "_storefront" : "TUR",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "22416111",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "TryIt Premium",
+          "locale" : "tr"
+        }
+      ],
+      "name" : "TryIt Premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "2499.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6816475609",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Her ay 30 kombin, 12 ay boyunca",
+              "displayName" : "Yıllık Premium",
+              "locale" : "tr"
+            }
+          ],
+          "productID" : "com.lafagency.tryit.premium.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Yıllık Premium",
+          "subscriptionGroupID" : "22416111",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "249.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "6816475515",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Her ay 30 kombin",
+              "displayName" : "Aylık Premium",
+              "locale" : "tr"
+            }
+          ],
+          "productID" : "com.lafagency.tryit.premium.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Aylık Premium",
+          "subscriptionGroupID" : "22416111",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

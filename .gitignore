@@ -1,0 +1,23 @@
+node_modules/
+.next/
+out/
+build/
+.env
+.env.local
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+.data/
+deploy/data/
+
+# iOS
+ios/build*/
+ios/TryIt.xcodeproj/
+*.xcuserstate
+xcuserdata/
+
+# Depoya asla girmeyecek gizli değerler
+ios/Secrets.xcconfig
+fastlane/*.p8
+deploy/app.env
+deploy/.env

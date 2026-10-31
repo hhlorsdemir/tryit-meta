@@ -1,0 +1,30 @@
+# TryIt'in site ayarı. Sunucudaki ortak Caddy (/opt/edge) bunu
+# /opt/edge/sites/tryit.caddy olarak okur; güncelleme komutu kopyalar.
+# Uygulamaya `edge` ağındaki `tryit-app` adıyla gidilir.
+tryit.lafdev.com {
+	encode zstd gzip
+
+	# Kökte web portalı var; API, /_next/* ve sayfalar hepsi uygulamaya
+	# gider. Sunucuda TRYIT_WEB_ENABLED=1 yoksa Next kökte 404 döner
+	# (src/app/page.tsx).
+	handle /api/* {
+		# Giydirme isteği bir dakikayı aşabiliyor; varsayılan süreler yetmiyor.
+		reverse_proxy tryit-app:3000 {
+			transport http {
+				read_timeout 300s
+				write_timeout 300s
+			}
+		}
+	}
+
+	# Gizlilik metni App Store ve TestFlight için gerekiyor; public/
+	# klasöründen, uygulamanın kendisinden geliyor.
+	handle /gizlilik {
+		rewrite * /gizlilik.html
+		reverse_proxy tryit-app:3000
+	}
+
+	handle {
+		reverse_proxy tryit-app:3000
+	}
+}

@@ -1,0 +1,294 @@
+{
+  "sourceLanguage": "tr",
+  "strings": {
+    "CFBundleDisplayName": {
+      "comment": "Marka adı, her dilde TryIt kalıyor",
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt"
+          }
+        }
+      }
+    },
+    "NSCameraUsageDescription": {
+      "comment": "Kamera izni açıklaması",
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Avatarını oluşturmak için tam boy bir fotoğrafını çekmen gerekiyor."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt needs camera access to take a full-body photo for your avatar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt benötigt Kamerazugriff, um ein Ganzkörperfoto für deinen Avatar aufzunehmen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt a besoin d'accéder à l'appareil photo pour prendre une photo en pied pour ton avatar."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt necesita acceso a la cámara para tomar una foto de cuerpo entero para tu avatar."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O TryIt precisa de acesso à câmera para tirar uma foto de corpo inteiro para o seu avatar."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt ha bisogno di accedere alla fotocamera per scattare una foto a figura intera per il tuo avatar."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アバターを作成するために、全身写真を撮影するにはカメラへのアクセスが必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아바타를 만들기 위해 전신 사진을 촬영하려면 카메라 접근 권한이 필요해요."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يحتاج TryIt إلى إذن الوصول إلى الكاميرا لالتقاط صورة كاملة لجسمك من أجل إنشاء الصورة الرمزية الخاصة بك."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt heeft toegang tot de camera nodig om een foto van je hele lichaam te maken voor je avatar."
+          }
+        }
+      }
+    },
+    "NSLocalNetworkUsageDescription": {
+      "comment": "Yerel ağ izni açıklaması; yalnızca geliştirme sırasında görünür",
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Kıyafetleri hazırlayan sunucu aynı ağdaki bilgisayarda çalışıyor."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The server that prepares your outfits runs on a computer on the same network."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Server, der deine Outfits vorbereitet, läuft auf einem Computer im selben Netzwerk."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le serveur qui prépare tes looks fonctionne sur un ordinateur du même réseau."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El servidor que prepara tus looks se ejecuta en un ordenador de la misma red."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O servidor que prepara seus looks roda em um computador na mesma rede."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il server che prepara i tuoi look funziona su un computer nella stessa rete."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コーデを準備するサーバーは、同じネットワーク上のコンピューターで動作しています。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "코디를 준비하는 서버는 같은 네트워크의 컴퓨터에서 실행돼요."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعمل الخادم الذي يجهّز إطلالاتك على جهاز كمبيوتر ضمن الشبكة نفسها."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De server die je outfits voorbereidt, draait op een computer in hetzelfde netwerk."
+          }
+        }
+      }
+    },
+    "NSPhotoLibraryUsageDescription": {
+      "comment": "Fotoğraf arşivi izni açıklaması",
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Avatarınızı oluşturmak için galeriden bir fotoğraf seçmeniz gerekiyor."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt needs photo library access so you can choose a photo for your avatar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt benötigt Zugriff auf deine Mediathek, damit du ein Foto für deinen Avatar auswählen kannst."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt a besoin d'accéder à ta photothèque pour que tu puisses choisir une photo pour ton avatar."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt necesita acceso a tu galería para que puedas elegir una foto para tu avatar."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O TryIt precisa de acesso à galeria para que você possa escolher uma foto para o seu avatar."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt ha bisogno di accedere alla libreria foto per permetterti di scegliere una foto per il tuo avatar."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アバターの写真を選択するために、写真ライブラリへのアクセスが必要です。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아바타에 사용할 사진을 선택하려면 사진 보관함 접근 권한이 필요해요."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يحتاج TryIt إلى إذن الوصول إلى مكتبة الصور حتى تتمكن من اختيار صورة لإنشاء الصورة الرمزية الخاصة بك."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TryIt heeft toegang tot je fotobibliotheek nodig, zodat je een foto voor je avatar kunt kiezen."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
