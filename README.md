@@ -69,5 +69,4 @@ Istanbul.
 
 ## Team
 
-- Hasan Lütfü Örsdemir: product, iOS and full-stack engineering
-- Osman Fatih Kılıç: AI pipeline optimisation
+- Hasan Lütfü Örsdemir: product, iOS, AI pipeline and full-stack engineering
